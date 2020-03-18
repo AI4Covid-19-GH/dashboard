@@ -39,6 +39,7 @@
       }
     </style>
     <script type="text/javascript">
+    //clear the screen and leave just the map on screen load
       function clear() {
         var items =  document.getElementsByClassName('flourish-embed');
         console.log(items);
@@ -98,6 +99,7 @@
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <!-- Items are numerically ID'd for easy referencing -->
           <div
             id="1"
             class="flourish-embed flourish-map"
@@ -146,6 +148,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script>
+      //when an item is clicked, clear everything and restore just the corresponding chart
       function select(num) {
         var elems =  document.getElementsByClassName('flourish-embed');
         console.log(elems);
